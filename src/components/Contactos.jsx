@@ -33,7 +33,7 @@ const Contactos = () => {
       </div>
       <div className='flex items-center sm:flex-col'>
       <div className='h-1/2 sm:w-full'>
-        <pre className='text-xl text-tertiary'>{JSON.stringify(Contacto1,null,3)}</pre>
+        <pre className='text-xl text-tertiary sx:text-[15px]'>{JSON.stringify(Contacto1,null,3)}</pre>
       </div>
       
 
@@ -50,7 +50,7 @@ const Contactos = () => {
 
         <footer className='mt-5'>
             <hr />
-            <div className='text-white text-center text-xl mt-5'>
+            <div className='text-white text-center text-xl mt-5 sx:text-sm sx:m-2'>
                 <h3>Diseñado y Desarrollado por:</h3>
                 <h3>William Hidrovo Bernal</h3>
             </div>

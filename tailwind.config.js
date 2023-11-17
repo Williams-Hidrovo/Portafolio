@@ -14,7 +14,10 @@ module.exports = {
       // => @media (max-width: 1023px) { ... }
 
       sm: { max: "1000px" },
-      // => @media (max-width: 639px) { ... }
+      // => @media (max-width: 1000px) { ... }
+
+      sx: { max: "500px" },
+      // => @media (max-width: 600px) { ... }
     },
   },
   plugins: [],

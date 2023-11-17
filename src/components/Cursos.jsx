@@ -33,7 +33,7 @@ const Cursos = () => {
         <span className='w-52 h-0.5 bg-tertiary'></span>
       </div>
       <div className='flex sm:flex-col'>
-        <div className='flex flex-col border-l-2 border-tertiary w-1/4 px-5 sm:flex-row sm:w-full sm:overflow-scroll'>
+        <div className='flex flex-col border-l-2 sm:overflow-y-hidden border-tertiary w-1/4 px-5 sm:flex-row sm:w-full sm:overflow-scroll'>
           {Cursos1.map((curso,i) =>{
             return(
                 <div
@@ -41,7 +41,7 @@ const Cursos = () => {
                 onClick={() =>setIndex(i)}
                 className={index==i ? 'bg-tertiary/30 cursor-pointer border-l-4 border-tertiary px-5 py-3 my-3 w-[200px]' : 'cursor-pointer px-5 py-3 my-3 w-[200px]' }
                 >
-                  <h1 className='text-xl text-white ml-2'>{curso.titulo}</h1>
+                  <h1 className='text-xl text-white ml-2 sx:text-[15px] sx:w-[100px]'>{curso.titulo}</h1>
                 </div>
               
             );

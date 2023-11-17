@@ -47,10 +47,10 @@ const Sobremi = () => {
       </div>
       <div className='flex flex-col gap-3'>
         <h2 className='text-tertiary text-2xl'>Estas son las tegnologias con las que trabajo actualmente</h2>
-        <div className='flex flex-wrap mb-10'>
+        <div className='flex flex-wrap mb-10 sx:justify-center'>
           {Sobre.tegnologias.map(teg =>{
             return(
-              <div key={teg} className='w-[150px] border-2 border-tertiary text-tertiary text-center px-5 py-2 m-3'>
+              <div key={teg} className='w-[150px] border-2 border-tertiary text-tertiary text-center px-5 py-2 m-3 sx:text-sm sx:w-[100px]'>
                 {teg}
               </div>
             );

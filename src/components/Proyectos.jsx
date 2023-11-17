@@ -27,7 +27,7 @@ const Proyectos = () => {
 
 //<section className='w-9/12 mx-auto flex flex-col gap-10 my-[50px]'>
   return (
-      <section className={visible ? 'w-9/12 mx-auto flex flex-col gap-10 my-[60px] animate__animated animate__fadeIn sm:w-11/12 sm:h-[550px]': 'w-9/12 mx-auto flex flex-col gap-10 my-[50px] animate__animated animate__fadeOut opacity-0 sm:w-11/12' }>
+      <section className={visible ? 'w-9/12 mx-auto flex flex-col gap-10 my-[60px] animate__animated animate__fadeIn sm:w-11/12 sm:h-[570px]': 'w-9/12 mx-auto flex flex-col gap-10 my-[50px] animate__animated animate__fadeOut opacity-0 sm:w-11/12' }>
       <div className='flex gap-5 items-center'>
         <h1 className='text-secondary text-4xl'>Proyectos</h1>
         <span className='w-52 h-0.5 bg-tertiary'></span>
@@ -41,13 +41,13 @@ const Proyectos = () => {
                 onClick={() =>setIndex(i)}
                 className={index==i ? 'bg-tertiary/30 cursor-pointer border-l-4 border-tertiary px-5 py-3 my-3 w-[200px]' : 'cursor-pointer px-5 py-3 my-3 w-[200px]' }
                 >
-                  <h1 className='text-xl text-white ml-2'>{proyec.nombre}</h1>
+                  <h1 className='text-xl text-white ml-2 sx:text-lg'>{proyec.nombre}</h1>
                 </div>
               
             );
           })}
         </div>
-        <div className='w-3/4 flex ml-2 sm:flex-col sm:w-full sm:gap-5 sm:m-0'>
+        <div className='w-3/4 flex ml-2 sm:flex-col sm:w-full sm:gap-5 sm:m-0 sx:mt-3'>
           <div className='w-[450px] h-[250px] bg-red-400 sm:w-full'>
           <img className='w-full h-full object-cover object-left' src={Proyectos1[index].imagen} alt="" />
           </div>

@@ -16,7 +16,7 @@ const Sobremi = () => {
       }
 
     };
-    //agregar evento scroll
+    //agregar evento scroll...
     window.addEventListener('scroll',scrollPos);
     return ()=>{
       window.removeEventListener('scroll',scrollPos);

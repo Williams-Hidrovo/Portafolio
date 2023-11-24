@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color:#0A192F ;
     
 }

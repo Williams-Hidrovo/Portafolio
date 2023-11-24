@@ -32,8 +32,8 @@ const Contactos = () => {
             <span className='w-52 h-0.5 bg-tertiary'></span>
       </div>
       <div className='flex items-center sm:flex-col'>
-      <div className='h-1/2 sm:w-full'>
-        <pre className='text-xl text-tertiary sx:text-[15px]'>{JSON.stringify(Contacto1,null,3)}</pre>
+      <div className='h-1/2 sm:w-11/12 overflow-hidden'>
+        <pre className='text-xl sm:w-11/12 text-tertiary sx:w-11/12 sx:text-[12px]'>{JSON.stringify(Contacto1,null,3)}</pre>
       </div>
       
 

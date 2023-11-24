@@ -39,7 +39,7 @@ const Experiencia = () => {
                 <div
                 key={expe.cargo}
                 onClick={() =>setIndex(i)}
-                className={index==i ? 'bg-tertiary/30 cursor-pointer border-l-4 border-tertiary px-3 py-3 my-3' : 'cursor-pointer border-l-4 border-transparent px-3 py-3 my-3' }
+                className={index==i ? 'bg-tertiary/30 cursor-pointer border-l-4 border-tertiary px-3 py-3 my-3 sm:my-0' : 'cursor-pointer border-l-4 border-transparent px-3 py-3 my-3 sm:my-0' }
                 >
                   <h1 className='text-2xl text-white ml-2 sx:text-lg'>{expe.periodo}</h1>
                 </div>

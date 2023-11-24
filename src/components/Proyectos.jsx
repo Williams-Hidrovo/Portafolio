@@ -48,7 +48,7 @@ const Proyectos = () => {
           })}
         </div>
         <div className='w-3/4 flex ml-2 sm:flex-col sm:w-full sm:gap-5 sm:m-0 sx:mt-3'>
-          <div className='w-[450px] h-[250px] bg-red-400 sm:w-full'>
+          <div className='w-[450px] h-[250px] bg-red-400 sm:w-full sm:h-[200px]'>
           <img className='w-full h-full object-cover object-left' src={Proyectos1[index].imagen} alt="" />
           </div>
           

@@ -3,6 +3,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body{
+    overflow-x: hidden;
+    background-color:#0A192F ;
+      
+}
+
 *{
     font-family: 'Montserrat', sans-serif;
     margin: 0;

@@ -27,12 +27,12 @@ const Proyectos = () => {
 
 //<section className='w-9/12 mx-auto flex flex-col gap-10 my-[50px]'>
   return (
-      <section className={visible ? 'w-9/12 mx-auto flex flex-col gap-10 my-[60px] animate__animated animate__fadeIn sm:w-11/12 sm:h-[570px]': 'w-9/12 mx-auto flex flex-col gap-10 my-[50px] animate__animated animate__fadeOut opacity-0 sm:w-11/12' }>
+      <section className={visible ? 'w-9/12 mx-auto flex flex-col gap-10 my-[60px] animate__animated animate__fadeIn sm:w-11/12 sm:h-[570px] sm:overflow-x-hidden': 'w-9/12 mx-auto flex flex-col gap-10 my-[50px] animate__animated animate__fadeOut opacity-0 sm:w-11/12' }>
       <div className='flex gap-5 items-center'>
-        <h1 className='text-secondary text-4xl'>Proyectos</h1>
+        <h1 className='text-secondary text-4xl sm:text-2xl'>Proyectos</h1>
         <span className='w-52 h-0.5 bg-tertiary'></span>
       </div>
-      <div className='flex sm:flex-col'>
+      <div className='flex sm:flex-col overflow-x-hidden'>
         <div className='flex flex-col border-l-2 border-tertiary w-1/4 sm:flex-row sm:overflow-scroll sm:overflow-y-hidden sm:w-full'>
           {Proyectos1.map((proyec,i) =>{
             return(

@@ -26,14 +26,14 @@ const Contactos = () => {
 
 
   return (
-      <section id='miFooter' className={visible ? 'w-9/12 mx-auto flex flex-col gap-10 my-[60px] animate__animated animate__fadeIn sm:w-11/12': 'w-9/12 mx-auto flex flex-col gap-10 my-[50px] animate__animated animate__fadeOut opacity-0 sm:w-11/12' }>
+      <section id='miFooter' className={visible ? 'w-9/12 mx-auto flex flex-col gap-10 my-[60px] animate__animated animate__fadeIn sm:w-11/12 sm:overflow-x-hidden': 'w-9/12 mx-auto flex flex-col gap-10 my-[50px] animate__animated animate__fadeOut opacity-0 sm:w-11/12' }>
         <div className='flex gap-5 items-center'>
-            <h1 className='text-secondary text-4xl'>Contacto</h1>
+            <h1 className='text-secondary text-4xl sm:text-2xl'>Contacto</h1>
             <span className='w-52 h-0.5 bg-tertiary'></span>
       </div>
       <div className='flex items-center sm:flex-col'>
-      <div className='h-1/2 sm:w-11/12 overflow-hidden'>
-        <pre className='text-xl sm:w-11/12 text-tertiary sx:w-11/12 sx:text-[12px]'>{JSON.stringify(Contacto1,null,3)}</pre>
+      <div className='h-1/2 sm:w-11/12'>
+        <pre className='text-xl sm:w-11/12 text-tertiary sx:w-11/12 sm:text-[16px] sx:text-[12px] '>{JSON.stringify(Contacto1,null,3)}</pre>
       </div>
       
 

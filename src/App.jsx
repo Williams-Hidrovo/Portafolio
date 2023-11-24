@@ -9,7 +9,19 @@ import Cursos from './components/Cursos';
 import Contactos from './components/Contactos';
 import Redes from './components/Redes';
 
-
+/*
+ 
+     
+    
+    
+    
+       
+    
+    
+    
+    
+    
+*/
 function App() {
 
   return (
@@ -22,7 +34,6 @@ function App() {
     <Cursos/>
     <Contactos/>
     <Redes/>
-    
     </>
   )
 }

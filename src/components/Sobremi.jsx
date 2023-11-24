@@ -32,13 +32,13 @@ const Sobremi = () => {
 
 
   return (
-    <section className={visible ?'w-9/12 mx-auto flex flex-col justify-center gap-10 mb-[50px] animate__animated animate__fadeIn sm:w-11/12' : 'w-9/12 mx-auto flex flex-col justify-center gap-10 mb-[50px] opacity-0 sm:opacity-100 sm:w-11/12'}>
+    <section className={visible ?'w-9/12 mx-auto flex flex-col justify-center gap-10 mb-[50px] animate__animated animate__fadeIn sm:w-11/12 overflow-x-hidden' : 'w-9/12 mx-auto flex flex-col justify-center gap-10 mb-[50px] opacity-0 overflow-x-hidden sm:opacity-100 sm:w-11/12'}>
       <div className='flex gap-5 items-center'>
-      <h1 className='text-secondary text-4xl'>Sobre mi</h1>
+      <h1 className='text-secondary text-4xl sm:text-2xl'>Sobre mi</h1>
       <span className='w-52 h-0.5 bg-tertiary'></span>
       </div>
       <div className='flex sm:flex-col'>
-        <div className='w-2/4 sm:w-full'>
+        <div className='w-2/4 sm:w-11/12'>
           <dotlottie-player src="https://lottie.host/ee5b2f42-5aed-4269-8fdb-106994ef7580/xub8R4Iq0a.json"
           background="transparent"
           speed="1"
@@ -56,7 +56,7 @@ const Sobremi = () => {
         <div className='flex flex-wrap mb-10 sx:justify-center'>
           {Sobre.tegnologias.map(teg =>{
             return(
-              <div key={teg} className='w-[150px] border-2 border-tertiary text-tertiary text-center px-5 py-2 m-3 sx:text-sm sx:w-[100px]'>
+              <div key={teg} className='w-[150px] border-2 border-tertiary text-tertiary text-center px-5 py-2 m-3 sx:text-sm sx:w-[100px] sx:text-center'>
                 {teg}
               </div>
             );

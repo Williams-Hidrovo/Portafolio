@@ -14,7 +14,7 @@ const Intro = () => {
      <h1 className='text-secondary text-7xl font-bold sm:text-5xl sx:text-4xl'>{Intro.nombre}</h1>
      <h2 className='text-white text-5xl font-semibold sm:text-3xl'>{Intro.titulo}</h2>
      <p className='text-white text-lg sx:text-sm'>{Intro.descripcion}</p>
-     <button className='w-48 h-12 text-tertiary/80 hover:text-tertiary border-tertiary/80 hover:border-tertiary border-2' onClick={scrollToFooter}>Contactame</button>
+     <button className='w-48 h-12 text-tertiary/80 hover:text-tertiary border-tertiary/80 hover:border-tertiary border-2 sm:mt-5' onClick={scrollToFooter}>Contactame</button>
     </section>
   )
 }

@@ -4,11 +4,18 @@ import '../App.css';
 const Sobremi = () => {
   const [visible,setVisible]=useState(false);
   const {Sobre}=dataPortafolio;
-
+  let screenX=1200;
   useEffect(() =>{
     const scrollPos=()=>{
+      let rango=130;
+      const screenX=window.innerWidth;
+      console.log(screenX);
       const scrollY=window.scrollY;
-      if(scrollY>180){
+      if(screenX < 500){
+        rango=-1;
+      }
+       
+      if(scrollY>rango){
         setVisible(true);
       }
       else{
@@ -26,7 +33,7 @@ const Sobremi = () => {
 
 
   return (
-    <section className={visible ?'w-9/12 mx-auto flex flex-col justify-center gap-10 mb-[50px] animate__animated animate__fadeIn sm:w-11/12' : 'w-9/12 mx-auto flex flex-col justify-center gap-10 my-[50px] opacity-0 animate__animated animate__fadeOut sm:w-11/12'}>
+    <section className={visible ?'w-9/12 mx-auto flex flex-col justify-center gap-10 mb-[50px] animate__animated animate__fadeIn sm:w-11/12' : 'w-9/12 mx-auto flex flex-col justify-center gap-10 mb-[50px] opacity-0 sm:opacity-100 sm:w-11/12'}>
       <div className='flex gap-5 items-center'>
       <h1 className='text-secondary text-4xl'>Sobre mi</h1>
       <span className='w-52 h-0.5 bg-tertiary'></span>

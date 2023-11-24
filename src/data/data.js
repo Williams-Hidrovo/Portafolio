@@ -113,7 +113,7 @@ export const dataPortafolio = {
     nombre: "Williams Hidrovo Bernal",
     Genero: "Masculino",
     Edad: "29",
-    Correo: "antonioxxw@gamil.com",
+    Correo: "antonioxxw@gmail.com",
     Telefono: "593 95 915 1828",
     Direccion: "Ecuador",
   },

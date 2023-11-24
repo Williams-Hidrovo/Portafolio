@@ -52,7 +52,7 @@ const Contactos = () => {
             <hr />
             <div className='text-white text-center text-xl mt-5 sx:text-sm sx:m-2'>
                 <h3>Diseñado y Desarrollado por:</h3>
-                <h3>William Hidrovo Bernal</h3>
+                <h3>Williams Hidrovo Bernal</h3>
             </div>
             
         </footer>

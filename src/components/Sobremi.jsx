@@ -9,7 +9,6 @@ const Sobremi = () => {
     const scrollPos=()=>{
       let rango=130;
       const screenX=window.innerWidth;
-      console.log(screenX);
       const scrollY=window.scrollY;
       if(screenX < 500){
         rango=-1;
